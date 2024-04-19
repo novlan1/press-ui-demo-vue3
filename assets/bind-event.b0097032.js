@@ -1,1 +1,0 @@
-import{at as t,au as n}from"./index-95b0f20a.js";let e=0;function o(o){const a=`binded_${e}`;function c(){const n=this;n[a]||(o.call(n,t,!0),n[a]=!0)}function i(){const t=this;t[a]&&(o.call(t,n,!1),t[a]=!1)}return e+=1,{mounted:c,activated:c,deactivated:i,beforeDestroy:i}}export{o as B};
