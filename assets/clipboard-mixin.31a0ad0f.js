@@ -1,0 +1,1 @@
+import{a as t}from"./handler.330eb9e0.js";import{a as o,b as s}from"./index.21924a3a.js";const e={data(){let t=0;return t=44,{offsetTop:44}},methods:{copyIconTag(e){const a=this;(function(t){let e=o;return e=s,e(`${t}`)})(e).then((()=>{t({type:"success",duration:1500,message:`${a.t("copied")}：${e}`,top:a.offsetTop})}))}}};export{e as C};
