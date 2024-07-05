@@ -54,7 +54,7 @@
     "init:env": "node script/env/rainbow-env",
     "deploy:mine": "node script/deploy/deploy-mine",
     "watch": "node script/watch/watch",
-    "prepare": "cd src/press-ui && npm run init",
+    "prepare": "cd src/press-ui && npm run init || true",
     "build:igame": "node script/deploy/build-igame"
   },
   "dependencies": {
