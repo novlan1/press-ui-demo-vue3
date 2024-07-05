@@ -10,7 +10,7 @@
   "homepage": "https://novlan1.github.io/press-ui-v3",
   "scripts": {
     "env": "node env",
-    "dev": "npm run dev:h5",
+    "dev": "npm run init && npm run dev:h5",
     "build": "npm run build:h5",
     "dev:mp": "npm run dev:mp-weixin",
     "build:mp": "npm run build:mp-weixin",
