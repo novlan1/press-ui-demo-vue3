@@ -1,0 +1,1 @@
+import"./press-component.5db9b2cc.js";import{g as t,a as s,s as a}from"./component-handler.a3e6e2e9.js";import"./index-26897e9f.js";function o(o){return{data(){return{...t(this,o)}},watch:{...s(o)},methods:{setData(t){a.call(this,t)}}}}export{o as g};
