@@ -1,13 +1,14 @@
 {
   "name": "press-ui-demo-vue3",
   "version": "1.3.39",
+  "private": true,
   "description": "简单、易用的跨端组件库，兼容 Vue2 和 Vue3，同时支持 uni-app和普通 Vue 项目",
   "repository": {
     "type": "git",
-    "url": "https://github.com/novlan1/press-ui-v3"
+    "url": "https://github.com/novlan1/press-ui-demo-vue3"
   },
   "author": "guowangyang",
-  "homepage": "https://novlan1.github.io/press-ui-v3",
+  "homepage": "https://novlan1.github.io/press-ui-demo-vue3",
   "scripts": {
     "env": "node env",
     "dev": "npm run dev:h5",
