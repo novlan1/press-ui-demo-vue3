@@ -20,8 +20,8 @@ dist
 *.sln
 *.sw?
 
-src/pages
-src/packages
-src/utils
+# src/pages
+# src/packages
+# src/utils
 
 dist/

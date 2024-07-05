@@ -1,0 +1,39 @@
+import innerCreateInput from './create_input';
+import { watchChange } from './choose-common';
+
+
+let imageInput = null;
+
+export function chooseImage({
+  count,
+  sourceType,
+  extension,
+  success,
+}) {
+  if (imageInput) {
+    document.body.removeChild(imageInput);
+    imageInput = null;
+  }
+
+  imageInput = innerCreateInput({
+    count,
+    sourceType,
+    extension,
+    type: 'image',
+  });
+  document.body.appendChild(imageInput);
+  imageInput.addEventListener('change', (event) => {
+    const tempFiles = watchChange(event, count);
+
+    const res = {
+      errMsg: 'chooseImage:ok',
+      get tempFilePaths() {
+        return tempFiles.map(({ path }) => path);
+      },
+      tempFiles,
+    };
+    success(res);
+  });
+
+  imageInput.click();
+}
