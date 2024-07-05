@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="易用、灵活、基于uni-app的跨端组件库">
+  <link rel="icon"
+    href="https://mike-1255355338.cos.ap-guangzhou.myqcloud.com/article/2023/8/own_mike_0d0107312bfd164de4.ico">
+  <title>Press UI</title>
+  <style>
+    html {
+      font-size: 50px !important;
+    }
+
+    body {
+      font-size: 16px !important;
+    }
+  </style>
+  <script>
+    var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+      CSS.supports('top: constant(a)'))
+    document.write(
+      '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+      (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+  </script>
+  <!--preload-links-->
+  <!--app-context-->
+</head>
+
+<body>
+  <div id="app"><!--app-html--></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
