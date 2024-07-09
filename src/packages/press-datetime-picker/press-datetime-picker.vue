@@ -67,6 +67,7 @@ export default {
   name: 'PressDatetimePicker',
   options: {
     ...defaultOptions,
+    styleIsolation: 'shared',
   },
   components: {
     PressPicker,
@@ -422,5 +423,5 @@ export default {
 
 </script>
 <style scoped lang="scss">
-@import "../common/style/press/index.scss";
+// @import "../common/style/press/index.scss";
 </style>

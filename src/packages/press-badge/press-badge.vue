@@ -24,6 +24,9 @@ export default {
   name: 'PressBadge',
   components: {
   },
+  options: {
+    styleIsolation: 'shared',
+  },
   props: {
     dot: {
       type: Boolean,
@@ -86,32 +89,5 @@ export default {
 };
 
 </script>
-<style scoped lang="scss">
-@import "../common/style/press/index.scss";
-@import "../common/style/press/var.scss";
-@import "./common.scss";
-
-.press-badge {
-  position: relative;
-  display: inline-block;
-
-  &--fixed {
-    .press-badge__info {
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      transform: translate(50%, -50%);
-      transform-origin: 100%;
-    }
-  }
-
-  &__info {
-    @include pressBadgeInfo();
-
-    &--dot {
-      @include pressBadgeInfoDot();
-    }
-  }
-}
+<style scoped lang="scss" src="./css/index.scss">
 </style>

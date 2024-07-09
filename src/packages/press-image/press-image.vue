@@ -145,7 +145,7 @@ export default {
       style.borderRadius = this.round ? '10000px' : addUnit(this.radius);
 
       // 如果设置圆角，必须要有hidden，否则可能圆角无效
-      style.overflow = this.borderRadius > 0 ? 'hidden' : 'visible';
+      style.overflow = this.radius > 0 ? 'hidden' : 'visible';
       // if (this.fade) {
       // 	style.opacity = this.opacity
       // 	// nvue下，这几个属性必须要分开写
@@ -212,39 +212,5 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-// @import "../../libs/css/components.scss";
-
-$press-image-error-top: 0px !default;
-$press-image-error-left: 0px !default;
-$press-image-error-width: 100% !default;
-$press-image-error-hight: 100% !default;
-$press-image-error-background-color: #f3f4f6 !default;
-$press-image-error-color: #909193 !default;
-$press-image-error-font-size: 23px !default;
-
-.press-image {
-  position: relative;
-  transition: opacity 0.5s ease-in-out;
-
-  &__image {
-    width: 100%;
-    height: 100%;
-  }
-
-  &__loading,
-  &__error {
-    position: absolute;
-    top: $press-image-error-top;
-    left: $press-image-error-left;
-    width: $press-image-error-width;
-    height: $press-image-error-hight;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $press-image-error-background-color;
-    color: $press-image-error-color;
-    font-size: $press-image-error-font-size;
-  }
-}
+<style lang="scss" scoped src="./css/index.scss">
 </style>

@@ -77,8 +77,8 @@
   </div>
 </template>
 <script>
-import PressCell from 'src/packages/press-cell/press-cell.vue';
-import PressPopupPlus from 'src/packages/press-popup-plus/press-popup-plus.vue';
+import PressCell from 'press-ui/press-cell/press-cell.vue';
+import PressPopupPlus from 'press-ui/press-popup-plus/press-popup-plus.vue';
 
 
 const DEFAULT_POSITION = 'center';
@@ -193,5 +193,6 @@ export default {
 <style scoped lang="scss">
 .demo-wrap {
   padding-bottom: 400px;
+  font-size: 16px;
 }
 </style>

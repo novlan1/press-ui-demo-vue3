@@ -150,6 +150,7 @@ export default {
 | ------ | -------------- | -------- |
 | close  | 关闭标签时触发 | -        |
 
-## 主题定制
 
-<theme-config />
+## 在线调试
+
+<debug-online />

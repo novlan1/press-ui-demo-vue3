@@ -1,4 +1,4 @@
-import { parseProtocol } from 'src/packages/common/protocol/parse-protocol';
+import { parseProtocol } from '../../common/protocol/parse-protocol';
 import { fetchData } from 'src/utils/index';
 
 const INTRODUCE_URL = 'https://tip-components-1251917893.cos.ap-guangzhou.myqcloud.com/rb/front-open-config__match__default__press_ui_introduce_config.json';
@@ -70,7 +70,7 @@ export const DEFAULT_PRESS_UI_INTRODUCE = [
         {
           text: '点击此处',
           light: true,
-          link: 'https://novlan1.github.io/press-ui-pure/',
+          link: 'https://novlan1.github.io/press-ui-demo-vue2-pure/',
         },
       ],
     ],
@@ -92,7 +92,7 @@ export const DEFAULT_PRESS_UI_INTRODUCE = [
         {
           text: '点击此处',
           light: true,
-          link: 'https://novlan1.github.io/press-ui-v3/',
+          link: 'https://novlan1.github.io/press-ui-demo-vue3/',
         },
       ],
     ],

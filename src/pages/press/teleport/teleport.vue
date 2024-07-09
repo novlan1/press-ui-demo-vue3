@@ -14,14 +14,14 @@
         :disabled="disabled"
       >
         <div class="demo-text">
-          test
+          {{ disabled ? '不使用 Teleport， 阴影部分在页面': '使用 Teleport，阴影部分在 body 下' }}
         </div>
       </PressTeleport>
     </div>
   </div>
 </template>
 <script>
-import PressTeleport from 'src/packages/press-teleport/press-teleport.vue';
+import PressTeleport from 'press-ui/press-teleport/press-teleport.vue';
 
 
 export default {

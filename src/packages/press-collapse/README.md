@@ -213,6 +213,7 @@ export default {
 | title      | 自定义`title`                 |
 | right-icon | 自定义右侧按钮，默认是`arrow` |
 
-## 主题定制
 
-<theme-config />
+## 在线调试
+
+<debug-online />

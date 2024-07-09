@@ -142,6 +142,7 @@ export default {
 | --notice-bar-icon-size        | _16px_                                            | -    |
 | --notice-bar-icon-min-width   | _24px_                                            | -    |
 
-## 主题定制
 
-<theme-config />
+## 在线调试
+
+<debug-online />

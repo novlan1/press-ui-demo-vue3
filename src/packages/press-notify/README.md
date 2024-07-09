@@ -109,6 +109,7 @@ Notify({
 | onClose          | 关闭时的回调函数                                       | _Function_ | -              |
 | safeAreaInsetTop | 是否留出顶部安全距离（状态栏高度）                     | _boolean_  | `false`        |
 
-## 主题定制
 
-<theme-config />
+## 在线调试
+
+<debug-online />

@@ -5,12 +5,6 @@
       "style": {
         "navigationBarTitleText": "Press UI Vue3"
       }
-    },
-    {
-      "path": "pages/share/share",
-      "style": {
-        "navigationBarTitleText": "分享"
-      }
     }
   ],
   "subPackages": [
@@ -367,6 +361,12 @@
         },
         {
           "path": "tree-select/tree-select",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
+          "path": "area/area",
           "style": {
             "navigationBarTitleText": ""
           }
