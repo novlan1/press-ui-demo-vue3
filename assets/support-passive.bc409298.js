@@ -1,0 +1,1 @@
+let e=!1;try{const s={};Object.defineProperty(s,"passive",{get:()=>(e=!0,!0)}),window.addEventListener("test-passive",(()=>{}),s)}catch(a){}const s=(s=!0)=>!!e&&{passive:s},t=s();export{t as P,e as S,s as p};
