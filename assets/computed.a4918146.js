@@ -1,0 +1,1 @@
+import{n as o}from"./press-popup.d46dd0c2.js";const e=["showTitle","closeIcon","arrowIcon","title","button","borderButton","zIndex","popupClass","closeOnClickOverlay","customStyle"].reduce(((e,s)=>(e[s]=o[s],e)),{});export{e as P};
