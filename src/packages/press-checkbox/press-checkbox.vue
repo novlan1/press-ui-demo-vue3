@@ -6,13 +6,13 @@
     <div
       v-if="labelPosition === 'left'"
       :class="innerLabelClass"
-      @click="onClickLabel"
+      @click.stop="onClickLabel"
     >
       <slot />
     </div>
     <div
       class="press-checkbox__icon-wrap"
-      @click="toggle"
+      @click.stop="toggle"
     >
       <slot
         v-if="useIconSlot"
@@ -31,7 +31,7 @@
     <div
       v-if="labelPosition === 'right'"
       :class="innerLabelClass"
-      @click="onClickLabel"
+      @click.stop="onClickLabel"
     >
       <slot />
     </div>
@@ -45,6 +45,7 @@ import { defaultProps, defaultOptions } from '../common/component-handler/press-
 import { ChildrenMixin } from '../mixins/relation';
 import computed from './index';
 import { PARENT_CHECKBOX_GROUP as PARENT } from '../common/constant/parent-map';
+import { formValidate } from '../common/utils/parent';
 
 function emit(target, value) {
   target.$emit('input', value);
@@ -172,6 +173,10 @@ export default {
       } else {
         emit(this, value);
       }
+
+      this.$nextTick(() => {
+        formValidate(this, 'change');
+      });
     },
     toggle() {
       const { parentDisabled, disabled, dataValue } = this;

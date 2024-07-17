@@ -20,6 +20,7 @@ specifiers:
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001
   '@dcloudio/uni-stacktracey': 3.0.0-3081220230817001
   '@dcloudio/vite-plugin-uni': 3.0.0-3081220230817001
+  '@popperjs/core': ^2.11.8
   '@types/jest': ^29.5.4
   '@types/node': ^20.6.0
   '@vue/runtime-core': ^3.2.45
@@ -30,7 +31,7 @@ specifiers:
   gulp: ^4.0.2
   plugin-light: latest
   press-plus: ^1.3.53
-  press-ui: ^2.0.0
+  press-ui: ^2.0.7
   qrcode.vue: ^3.4.1
   sass: ^1.66.1
   sass-loader: ^13.3.2
@@ -64,8 +65,9 @@ dependencies:
   '@dcloudio/uni-mp-toutiao': 3.0.0-3081220230817001_vue@3.4.31
   '@dcloudio/uni-mp-weixin': 3.0.0-3081220230817001_vue@3.4.31
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001_vue@3.4.31
-  press-plus: 1.5.20_press-ui@2.0.0
-  press-ui: 2.0.0
+  '@popperjs/core': 2.11.8
+  press-plus: 1.5.20_press-ui@2.0.7
+  press-ui: 2.0.7
   qrcode.vue: 3.4.1_vue@3.4.31
   t-comm: 1.3.90
   uqrcodejs: 4.0.7
@@ -3221,6 +3223,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@popperjs/core/2.11.8:
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+    dev: false
 
   /@prerenderer/prerenderer/0.7.2:
     resolution: {integrity: sha512-zWG3uFnrQWDJQoSzGB8bOnNhJCgIiylVYDFBP7Nw2LqngHOqwvpdBtGSjfajC8+fdR/iB2FqMqe27cfdmf/8TQ==}
@@ -10426,12 +10432,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /press-plus/1.5.20_press-ui@2.0.0:
+  /press-plus/1.5.20_press-ui@2.0.7:
     resolution: {integrity: sha512-/VbbRaYLe4itw1o83aBeySp/w5beFx1Ij6TJ17LSBQoImlreoCEfmEYgQA8/a169uq04tF8LN1zfjHV9PJtlpQ==}
     peerDependencies:
       press-ui: ^1.3.13
     dependencies:
-      press-ui: 2.0.0
+      press-ui: 2.0.7
       t-comm: 1.3.90
     transitivePeerDependencies:
       - canvas
@@ -10447,8 +10453,8 @@ packages:
       - debug
     dev: true
 
-  /press-ui/2.0.0:
-    resolution: {integrity: sha512-id46Jk5bQpkRcSF8buqIGe9sMYEfKSo1uI3elS36HzRI/28fi7qOvVje46/dnk+w6MrFwWZyxBwb2czKvWpakw==}
+  /press-ui/2.0.7:
+    resolution: {integrity: sha512-1Vp5wUpwo0vvvIoOhY4v7yNeg5+9mxjtnCb6d1N8g93DtBYCo4H+VnVbhyAe/rPHdIKKDuq/n8iZAuqI1Ksu4w==}
     dependencies:
       t-comm: 1.3.90
     transitivePeerDependencies:

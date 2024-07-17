@@ -48,6 +48,12 @@
           }
         },
         {
+          "path": "text/text",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
           "path": "toast/toast",
           "style": {
             "navigationBarTitleText": ""
@@ -85,6 +91,12 @@
         },
         {
           "path": "field/field",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
+          "path": "form/form",
           "style": {
             "navigationBarTitleText": ""
           }
@@ -180,6 +192,12 @@
           }
         },
         {
+          "path": "pull-refresh/pull-refresh",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
           "path": "share-sheet/share-sheet",
           "style": {
             "navigationBarTitleText": ""
@@ -270,6 +288,12 @@
           }
         },
         {
+          "path": "link/link",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
           "path": "list/list",
           "style": {
             "navigationBarTitleText": ""
@@ -319,6 +343,12 @@
         },
         {
           "path": "tag/tag",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
+          "path": "back-top/back-top",
           "style": {
             "navigationBarTitleText": ""
           }
