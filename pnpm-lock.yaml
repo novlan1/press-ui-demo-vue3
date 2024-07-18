@@ -31,7 +31,7 @@ specifiers:
   gulp: ^4.0.2
   plugin-light: latest
   press-plus: ^1.3.53
-  press-ui: ^2.0.7
+  press-ui: ^2.0.9
   qrcode.vue: ^3.4.1
   sass: ^1.66.1
   sass-loader: ^13.3.2
@@ -66,8 +66,8 @@ dependencies:
   '@dcloudio/uni-mp-weixin': 3.0.0-3081220230817001_vue@3.4.31
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001_vue@3.4.31
   '@popperjs/core': 2.11.8
-  press-plus: 1.5.20_press-ui@2.0.7
-  press-ui: 2.0.7
+  press-plus: 1.5.20_press-ui@2.0.9
+  press-ui: 2.0.9
   qrcode.vue: 3.4.1_vue@3.4.31
   t-comm: 1.3.90
   uqrcodejs: 4.0.7
@@ -10432,12 +10432,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /press-plus/1.5.20_press-ui@2.0.7:
+  /press-plus/1.5.20_press-ui@2.0.9:
     resolution: {integrity: sha512-/VbbRaYLe4itw1o83aBeySp/w5beFx1Ij6TJ17LSBQoImlreoCEfmEYgQA8/a169uq04tF8LN1zfjHV9PJtlpQ==}
     peerDependencies:
       press-ui: ^1.3.13
     dependencies:
-      press-ui: 2.0.7
+      press-ui: 2.0.9
       t-comm: 1.3.90
     transitivePeerDependencies:
       - canvas
@@ -10453,8 +10453,8 @@ packages:
       - debug
     dev: true
 
-  /press-ui/2.0.7:
-    resolution: {integrity: sha512-1Vp5wUpwo0vvvIoOhY4v7yNeg5+9mxjtnCb6d1N8g93DtBYCo4H+VnVbhyAe/rPHdIKKDuq/n8iZAuqI1Ksu4w==}
+  /press-ui/2.0.9:
+    resolution: {integrity: sha512-jjKLShZBqzFJEipquV3ujOXWQmC0lyb9pyY6lJ+lU5Oem3PFQ2mPdl4raSo1sNuGbvLDcbvRppkPS4okhs+AOA==}
     dependencies:
       t-comm: 1.3.90
     transitivePeerDependencies:
@@ -11064,6 +11064,7 @@ packages:
 
   /rimraf/3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
     dependencies:
       glob: 7.2.3

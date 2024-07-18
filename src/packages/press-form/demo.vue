@@ -14,6 +14,7 @@
       >
         <PressField
           :value="model1.userInfo.name"
+          :model-value="model1.userInfo.name"
           :border="false"
           @change="onChange"
         />
@@ -31,14 +32,16 @@
           disabled-color="#ffffff"
           placeholder="请选择性别"
           :border="false"
-          readonly="isMp"
+          :readonly="isMp"
           @click-input="showSex = true; hideKeyboard()"
         />
-        <PressIconPlus
-          slot="right"
-          name="arrow"
-        />
+        <template #right>
+          <PressIconPlus
+            name="arrow"
+          />
+        </template>
       </PressFormItem>
+
       <PressFormItem
         ref="item2"
         label="水果"
@@ -46,8 +49,9 @@
         border-bottom
       >
         <PressRadioGroup
-          v-model="model1.radiovalue1"
+          :value="model1.radiovalue1"
           direction="horizontal"
+          @change="val => model1.radiovalue1 = val"
         >
           <PressRadio
             v-for="(item, index) in radiolist1"
@@ -68,7 +72,7 @@
         label-width="80"
       >
         <PressCheckboxGroup
-          v-model="model1.checkboxValue1"
+          :value="model1.checkboxValue1"
           shape="square"
           direction="horizontal"
           @change="change"
@@ -113,27 +117,28 @@
           :border="false"
           placeholder="请填写验证码"
         />
-        <PressButton
-          slot="right"
-          type="primary"
-          size="mini"
-          :disabled="disabled1"
-          @click="getCode"
-        >
-          <press-count-down
-            use-slot
-            :time="time"
-            @change="onChangeTime"
+        <template #right>
+          <PressButton
+            type="primary"
+            size="mini"
+            :disabled="disabled1"
+            @click="getCode"
           >
-            <span class="countdown-wrap">
-              <template v-if="!Object.keys(timeData).length">获取信息</template>
-              <template v-else-if="timeData.seconds <= 0">重新获取</template>
-              <template v-else>
-                <span class="item">{{ timeData.seconds }}</span><span>秒重新获取</span>
-              </template>
-            </span>
-          </press-count-down>
-        </PressButton>
+            <press-count-down
+              use-slot
+              :time="time"
+              @change="onChangeTime"
+            >
+              <span class="countdown-wrap">
+                <template v-if="!Object.keys(timeData).length">获取信息</template>
+                <template v-else-if="timeData.seconds <= 0">重新获取</template>
+                <template v-else>
+                  <span class="item">{{ timeData.seconds }}</span><span>秒重新获取</span>
+                </template>
+              </span>
+            </press-count-down>
+          </PressButton>
+        </template>
       </PressFormItem>
     </PressForm>
 
@@ -355,7 +360,8 @@ export default {
       this.model1.userInfo.sex = e.name;
       this.$refs.form1.validateField('userInfo.sex');
     },
-    change() {
+    change(value) {
+      this.model1.checkboxValue1 = value;
       // console.log(e);
     },
     formatter(day) {
