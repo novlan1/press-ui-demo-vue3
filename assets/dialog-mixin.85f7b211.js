@@ -1,0 +1,1 @@
+import"./validator.9f7a67f8.js";import{g as t,a,s}from"./component-handler.3884399a.js";import"./index-ab3b137a.js";function r(r){return{data(){return{...t(this,r)}},watch:{...a(r)},methods:{setData(t){s.call(this,t)}}}}export{r as g};
