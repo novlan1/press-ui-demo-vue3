@@ -31,7 +31,7 @@ specifiers:
   gulp: ^4.0.2
   plugin-light: latest
   press-plus: ^1.3.53
-  press-ui: ^2.0.12
+  press-ui: ^2.0.14
   qrcode.vue: ^3.4.1
   sass: ^1.66.1
   sass-loader: ^13.3.2
@@ -66,8 +66,8 @@ dependencies:
   '@dcloudio/uni-mp-weixin': 3.0.0-3081220230817001_vue@3.4.31
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001_vue@3.4.31
   '@popperjs/core': 2.11.8
-  press-plus: 1.5.20_press-ui@2.0.12
-  press-ui: 2.0.12
+  press-plus: 1.5.20_press-ui@2.0.14
+  press-ui: 2.0.14
   qrcode.vue: 3.4.1_vue@3.4.31
   t-comm: 1.3.90
   uqrcodejs: 4.0.7
@@ -10432,12 +10432,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /press-plus/1.5.20_press-ui@2.0.12:
+  /press-plus/1.5.20_press-ui@2.0.14:
     resolution: {integrity: sha512-/VbbRaYLe4itw1o83aBeySp/w5beFx1Ij6TJ17LSBQoImlreoCEfmEYgQA8/a169uq04tF8LN1zfjHV9PJtlpQ==}
     peerDependencies:
       press-ui: ^1.3.13
     dependencies:
-      press-ui: 2.0.12
+      press-ui: 2.0.14
       t-comm: 1.3.90
     transitivePeerDependencies:
       - canvas
@@ -10453,8 +10453,8 @@ packages:
       - debug
     dev: true
 
-  /press-ui/2.0.12:
-    resolution: {integrity: sha512-yo3He9DK7pxHNkeMh/0ONK0b2Kp4e7aTzXLXBQgBB8UpHtXdkTklhALzJK8T9T9kZbK7yc3Zaaw33ozjSgq3xQ==}
+  /press-ui/2.0.14:
+    resolution: {integrity: sha512-Y2+Zceg+AZHDivqZcWn3LmDCNhw1arlwiPVPIkulimfHcOzquN5mEYTr/OBxSBsvdiuOICsFdWTYJZPW1r2Phg==}
     dependencies:
       t-comm: 1.3.90
     transitivePeerDependencies:
@@ -10559,7 +10559,7 @@ packages:
   /puppeteer/1.20.0:
     resolution: {integrity: sha512-bt48RDBy2eIwZPrkgbcwHtb51mj2nKvHOPMaSH2IsWiv7lOG9k9zhaRzpDZafrk05ajMc3cu+lSQYYOfH2DkVQ==}
     engines: {node: '>=6.4.0'}
-    deprecated: < 22.6.4 is no longer supported
+    deprecated: < 22.8.2 is no longer supported
     requiresBuild: true
     dependencies:
       debug: 4.3.5

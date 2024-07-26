@@ -1,8 +1,8 @@
 import { createSSRApp } from 'vue';
 import App from './App.vue';
-import DemoBlock from './pages/demo-block/demo-block.vue';
+import DemoBlock from './packages/press-demo-block/press-demo-block.vue';
 
-import { initDemoI18n } from './utils/i18n/i18n';
+import { initDemoI18n } from './packages/locale/demo-lang';
 import { initMixin } from './utils/mixin/mixin';
 
 import PressCell from './packages/press-cell/press-cell.vue';

@@ -48,6 +48,12 @@
           }
         },
         {
+          "path": "style/style",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
           "path": "text/text",
           "style": {
             "navigationBarTitleText": ""
@@ -67,6 +73,12 @@
         },
         {
           "path": "calendar/calendar",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
+          "path": "cascader/cascader",
           "style": {
             "navigationBarTitleText": ""
           }
