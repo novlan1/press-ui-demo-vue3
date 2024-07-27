@@ -1,1 +1,0 @@
-import"./add-unit.b5ba58ff.js";import{g as t,a,s}from"./component-handler.29f5e688.js";import"./index-dd603bd1.js";function r(r){return{data(){return{...t(this,r)}},watch:{...a(r)},methods:{setData(t){s.call(this,t)}}}}export{r as g};
