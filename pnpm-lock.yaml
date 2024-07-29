@@ -31,12 +31,13 @@ specifiers:
   gulp: ^4.0.2
   plugin-light: latest
   press-plus: ^1.3.53
-  press-ui: ^2.0.16
+  press-ui: ^2.0.19
   qrcode.vue: ^3.4.1
   sass: ^1.66.1
   sass-loader: ^13.3.2
   stylelint: ^15.10.3
   stylelint-config-common: ^1.0.10
+  swiper-next: ^0.1.1
   t-comm: latest
   typescript: ^4.9.4
   uqrcodejs: ^4.0.7
@@ -66,9 +67,10 @@ dependencies:
   '@dcloudio/uni-mp-weixin': 3.0.0-3081220230817001_vue@3.4.31
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001_vue@3.4.31
   '@popperjs/core': 2.11.8
-  press-plus: 1.5.20_press-ui@2.0.16
-  press-ui: 2.0.16
+  press-plus: 1.5.20_press-ui@2.0.19
+  press-ui: 2.0.19
   qrcode.vue: 3.4.1_vue@3.4.31
+  swiper-next: 0.1.1
   t-comm: 1.3.90
   uqrcodejs: 4.0.7
   vite-plugin-require-transform: 1.0.21
@@ -4017,7 +4019,7 @@ packages:
       '@volar/language-core': 1.11.1
       '@volar/source-map': 1.11.1
       '@vue/compiler-dom': 3.4.31
-      '@vue/shared': 3.4.31
+      '@vue/shared': 3.4.34
       computeds: 0.0.1
       minimatch: 9.0.5
       muggle-string: 0.3.1
@@ -4077,6 +4079,9 @@ packages:
 
   /@vue/shared/3.4.31:
     resolution: {integrity: sha512-Yp3wtJk//8cO4NItOPpi3QkLExAr/aLBGZMmTtW9WpdwBCJpRM6zj9WgWktXAl8IDIozwNMByT45JP3tO3ACWA==}
+
+  /@vue/shared/3.4.34:
+    resolution: {integrity: sha512-x5LmiRLpRsd9KTjAB8MPKf0CDPMcuItjP0gbNqFCIgL1I8iYp4zglhj9w9FPCdIbHG2M91RVeIbArFfFTz9I3A==}
 
   /@vue/tsconfig/0.1.3_@types+node@20.14.9:
     resolution: {integrity: sha512-kQVsh8yyWPvHpb8gIc9l/HIDiiVUy1amynLNpCy8p+FoCiZXCo6fQos5/097MmnNZc9AtseDsCrfkhqCrJ8Olg==}
@@ -10432,12 +10437,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /press-plus/1.5.20_press-ui@2.0.16:
+  /press-plus/1.5.20_press-ui@2.0.19:
     resolution: {integrity: sha512-/VbbRaYLe4itw1o83aBeySp/w5beFx1Ij6TJ17LSBQoImlreoCEfmEYgQA8/a169uq04tF8LN1zfjHV9PJtlpQ==}
     peerDependencies:
       press-ui: ^1.3.13
     dependencies:
-      press-ui: 2.0.16
+      press-ui: 2.0.19
       t-comm: 1.3.90
     transitivePeerDependencies:
       - canvas
@@ -10453,9 +10458,11 @@ packages:
       - debug
     dev: true
 
-  /press-ui/2.0.16:
-    resolution: {integrity: sha512-Zjoi/nKKmTiYDH1foZ6KkEQ8URYa8v39ve2d0fwktpjdt1YAF7xSCpvreVMVIyZEoqCYQwBQZsEn+d6UgmrSUA==}
+  /press-ui/2.0.19:
+    resolution: {integrity: sha512-KuhIYhBGyuBu5g613K0x3vPo+LE6T/G1yY2yzvRrf82qsGid2sLErKYk87TqM/INQICJwy4WcL3zOTDI7a/0iw==}
     dependencies:
+      '@popperjs/core': 2.11.8
+      swiper-next: 0.1.1
       t-comm: 1.3.90
     transitivePeerDependencies:
       - canvas
@@ -11993,6 +12000,12 @@ packages:
       picocolors: 1.0.1
       stable: 0.1.8
     dev: true
+
+  /swiper-next/0.1.1:
+    resolution: {integrity: sha512-SGfwtgibcAkuqZHuR6YtsRWMTHYv2mxd61TPH4YiTMX8FlBz1fheXB0T8fkcyZvJNgg3jF7ZwpI+hJA6T1OIUQ==}
+    dependencies:
+      '@vue/shared': 3.4.34
+    dev: false
 
   /systemjs/6.15.1:
     resolution: {integrity: sha512-Nk8c4lXvMB98MtbmjX7JwJRgJOL8fluecYCfCeYBznwmpOs8Bf15hLM6z4z71EDAhQVrQrI+wt1aLWSXZq+hXA==}

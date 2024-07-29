@@ -1,5 +1,18 @@
+<!-- eslint-disable vue/no-deprecated-dollar-listeners-api -->
 <template>
-  <uni-image v-on="$listeners">
+  <uni-image v-on="$listeners" v-if="isVue2">
+    <div
+      ref="content"
+      :style="style"
+    />
+    <div
+      v-if="mode === 'widthFix' || mode === 'heightFix'"
+      ref="sensor"
+      @resize="_fixSize()"
+    />
+  </uni-image>
+
+   <uni-image v-bind="$attrs" v-else>
     <div
       ref="content"
       :style="style"
@@ -12,6 +25,9 @@
   </uni-image>
 </template>
 <script>
+import '../mixins/pure/image';
+
+
 function fixNumber(number) {
   // fix: 解决 Chrome 浏览器上某些情况下导致 1px 缝隙的问题
   if (typeof navigator && navigator.vendor === 'Google Inc.' && number > 10) {
@@ -51,6 +67,13 @@ export default {
     };
   },
   computed: {
+    isVue2() {
+      let result = true;
+      // #ifdef VUE3
+      result = false;
+      // #endif
+      return result;
+    },
     ratio() {
       return this.originalWidth && this.originalHeight ? this.originalWidth / this.originalHeight : 0;
     },
