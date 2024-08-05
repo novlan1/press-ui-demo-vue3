@@ -1,0 +1,1 @@
+import{o as t,b as e}from"./event.eea0932c.js";let n=0;function o(o){const c=`binded_${n}`;function s(){const e=this;e[c]||(o.call(e,t,!0),e[c]=!0)}function a(){const t=this;t[c]&&(o.call(t,e,!1),t[c]=!1)}return n+=1,{mounted:s,activated:s,deactivated:a,beforeDestroy:a}}export{o as B};
