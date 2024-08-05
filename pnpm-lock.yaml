@@ -31,7 +31,7 @@ specifiers:
   gulp: ^4.0.2
   plugin-light: latest
   press-plus: ^1.3.53
-  press-ui: ^2.0.20
+  press-ui: ^2.1.2
   qrcode.vue: ^3.4.1
   sass: ^1.66.1
   sass-loader: ^13.3.2
@@ -67,8 +67,8 @@ dependencies:
   '@dcloudio/uni-mp-weixin': 3.0.0-3081220230817001_vue@3.4.31
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001_vue@3.4.31
   '@popperjs/core': 2.11.8
-  press-plus: 1.5.20_press-ui@2.0.20
-  press-ui: 2.0.20
+  press-plus: 1.5.20_press-ui@2.1.2
+  press-ui: 2.1.2
   qrcode.vue: 3.4.1_vue@3.4.31
   swiper-next: 0.1.1
   t-comm: 1.3.94
@@ -10702,12 +10702,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /press-plus/1.5.20_press-ui@2.0.20:
+  /press-plus/1.5.20_press-ui@2.1.2:
     resolution: {integrity: sha512-/VbbRaYLe4itw1o83aBeySp/w5beFx1Ij6TJ17LSBQoImlreoCEfmEYgQA8/a169uq04tF8LN1zfjHV9PJtlpQ==}
     peerDependencies:
       press-ui: ^1.3.13
     dependencies:
-      press-ui: 2.0.20
+      press-ui: 2.1.2
       t-comm: 1.3.94
     transitivePeerDependencies:
       - canvas
@@ -10723,8 +10723,9 @@ packages:
       - debug
     dev: true
 
-  /press-ui/2.0.20:
-    resolution: {integrity: sha512-8oVCkGA8hLrmw+MHPR2HWMVTJ5jC/QrNHb4T0i8UB34eAtMzOBQAMNOFNevSSZyX8dfupVDPSUpYj0/SiIySew==}
+  /press-ui/2.1.2:
+    resolution: {integrity: sha512-yNeZ6Y/3dH6+5n9ME6aDeFY0ZhnNdx1uXJeGaCiZBBlgQG+lKDUcJvWj+vuqCSU85xzHLMmZ28/XzwNqdASrWg==}
+    engines: {node: '>=14'}
     dependencies:
       '@popperjs/core': 2.11.8
       swiper-next: 0.1.1
@@ -12887,7 +12888,7 @@ packages:
       magic-string: 0.30.10
       minimatch: 9.0.5
       unimport: 3.9.1
-      unplugin: 1.11.0
+      unplugin: 1.12.0
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -12914,21 +12915,11 @@ packages:
       magic-string: 0.30.10
       minimatch: 9.0.5
       mlly: 1.7.1
-      unplugin: 1.11.0
+      unplugin: 1.12.0
       vue: 3.4.31_typescript@4.9.5
     transitivePeerDependencies:
       - rollup
       - supports-color
-    dev: true
-
-  /unplugin/1.11.0:
-    resolution: {integrity: sha512-3r7VWZ/webh0SGgJScpWl2/MRCZK5d3ZYFcNaeci/GQ7Teop7zf0Nl2pUuz7G21BwPd9pcUPOC5KmJ2L3WgC5g==}
-    engines: {node: '>=14.0.0'}
-    dependencies:
-      acorn: 8.12.1
-      chokidar: 3.6.0
-      webpack-sources: 3.2.3
-      webpack-virtual-modules: 0.6.2
     dev: true
 
   /unplugin/1.12.0:
