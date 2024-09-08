@@ -31,14 +31,14 @@ specifiers:
   gulp: ^4.0.2
   plugin-light: latest
   press-plus: ^1.3.53
-  press-ui: ^2.1.13
+  press-ui: ^2.1.16
   qrcode.vue: ^3.4.1
   sass: ^1.66.1
   sass-loader: ^13.3.2
   stylelint: ^15.10.3
   stylelint-config-common: ^1.0.10
   swiper-next: ^0.1.1
-  t-comm: latest
+  t-comm: ^1.3.101
   typescript: ^4.9.4
   uqrcodejs: ^4.0.7
   vite: 4.1.4
@@ -67,11 +67,11 @@ dependencies:
   '@dcloudio/uni-mp-weixin': 3.0.0-3081220230817001_vue@3.4.31
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001_vue@3.4.31
   '@popperjs/core': 2.11.8
-  press-plus: 1.5.20_press-ui@2.1.13
-  press-ui: 2.1.13
+  press-plus: 1.5.20_press-ui@2.1.16
+  press-ui: 2.1.16
   qrcode.vue: 3.4.1_vue@3.4.31
   swiper-next: 0.1.1
-  t-comm: 1.3.94
+  t-comm: 1.3.101
   uqrcodejs: 4.0.7
   vite-plugin-require-transform: 1.0.21
   vue: 3.4.31_typescript@4.9.5
@@ -1464,6 +1464,12 @@ packages:
       '@babel/helper-string-parser': 7.24.7
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
+
+  /@commitlint/config-conventional/17.8.1:
+    resolution: {integrity: sha512-NxCOHx1kgneig3VLauWJcDWS40DVjg7nKOpBEEK9E5fjJpQqLCilcnKkIIjdBH98kEO1q3NpE5NSrZ2kl/QGJg==}
+    engines: {node: '>=v14'}
+    dependencies:
+      conventional-changelog-conventionalcommits: 6.1.0
 
   /@csstools/css-parser-algorithms/2.7.0_3bnue2vbfmr7xydj72hqyj7uc4:
     resolution: {integrity: sha512-qvBMcOU/uWFCH/VO0MYe0AMs0BGMWAt6FTryMbFIKYtZtVnqTZtT8ktv5o718llkaGZWomJezJZjq3vJDHeJNQ==}
@@ -4453,6 +4459,9 @@ packages:
     resolution: {integrity: sha512-PCVAQswWemu6UdxsDFFX/+gVeYqKAod3D3UVm91jHwynguOwAvYPhx8nNlM++NqRcK6CxxpUafjmhIdKiHibqg==}
     dev: true
 
+  /array-ify/1.0.0:
+    resolution: {integrity: sha512-c5AMf34bKdvPhQ7tBGhqkgKNUzMr4WUs+WDtC2ZUGOUncbxKMTvqxYctiseW3+L4bA8ec+GcZ6/A/FW4m8ukng==}
+
   /array-includes/3.1.8:
     resolution: {integrity: sha512-itaWrbYbqpGXkGhZPGUulwnhVf5Hpy1xiCFsGqyIGglbBxmG5vSjxQen3/WGOjPpNEv1RtBLKxbmVXm8HpJStQ==}
     engines: {node: '>= 0.4'}
@@ -5393,6 +5402,12 @@ packages:
     engines: {node: '>=4.0.0'}
     dev: true
 
+  /compare-func/2.0.0:
+    resolution: {integrity: sha512-zHig5N+tPWARooBnb0Zx1MFcdfpyJrfTJ3Y5L+IFvUm8rM74hHz66z0gw0x4tijh5CorKkKUCnW82R2vmpeCRA==}
+    dependencies:
+      array-ify: 1.0.0
+      dot-prop: 5.3.0
+
   /compare-versions/3.6.0:
     resolution: {integrity: sha512-W6Af2Iw1z4CB7q4uU4hv646dW9GQuBM+YpC0UvUCWSD8w90SJjp+ujJuXaEMtAXBtSqGfMPuFOVn4/+FlaqfBA==}
 
@@ -5452,6 +5467,12 @@ packages:
     resolution: {integrity: sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==}
     engines: {node: '>= 0.6'}
     dev: true
+
+  /conventional-changelog-conventionalcommits/6.1.0:
+    resolution: {integrity: sha512-3cS3GEtR78zTfMzk0AizXKKIdN4OvSh7ibNz6/DPbhWWQu7LqE/8+/GqSodV+sywUR2gpJAdP/1JFf4XtN7Zpw==}
+    engines: {node: '>=14'}
+    dependencies:
+      compare-func: 2.0.0
 
   /convert-source-map/1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
@@ -6034,6 +6055,12 @@ packages:
       no-case: 3.0.4
       tslib: 2.6.3
     dev: true
+
+  /dot-prop/5.3.0:
+    resolution: {integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==}
+    engines: {node: '>=8'}
+    dependencies:
+      is-obj: 2.0.0
 
   /dotenv-expand/8.0.3:
     resolution: {integrity: sha512-SErOMvge0ZUyWd5B0NXMQlDkN+8r+HhVUsxgOO7IoPDOdDRD2JjExpN6y3KnFR66jsJMwSn1pqIivhU5rcJiNg==}
@@ -8460,6 +8487,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /is-obj/2.0.0:
+    resolution: {integrity: sha512-drqDG3cbczxxEJRoOXcOjtdp1J/lyp1mNn0xaznRs8+muBhgQcrnbspox5X5fOw0HnMnbfDzvnEMEtqDEJEo8w==}
+    engines: {node: '>=8'}
+
   /is-path-cwd/2.2.0:
     resolution: {integrity: sha512-w942bTcih8fdJPJmQHFzkS76NEP8Kzzvmw92cXsazb8intwLqPibPPdXf4ANdKV3rYMuuQYGIWtvz9JilB3NFQ==}
     engines: {node: '>=6'}
@@ -10367,7 +10398,7 @@ packages:
       progress-bar-webpack-plugin: 2.1.0
       rollup-plugin-visualizer: 5.12.0
       script-ext-html-webpack-plugin: 2.1.5
-      t-comm: 1.3.94
+      t-comm: 1.3.101
       uni-read-pages: 1.0.5
       unplugin-auto-import: 0.18.2
       unplugin-vue-components: 0.27.3_vue@3.4.31
@@ -10702,13 +10733,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /press-plus/1.5.20_press-ui@2.1.13:
+  /press-plus/1.5.20_press-ui@2.1.16:
     resolution: {integrity: sha512-/VbbRaYLe4itw1o83aBeySp/w5beFx1Ij6TJ17LSBQoImlreoCEfmEYgQA8/a169uq04tF8LN1zfjHV9PJtlpQ==}
     peerDependencies:
       press-ui: ^1.3.13
     dependencies:
-      press-ui: 2.1.13
-      t-comm: 1.3.94
+      press-ui: 2.1.16
+      t-comm: 1.3.101
     transitivePeerDependencies:
       - canvas
       - debug
@@ -10717,19 +10748,19 @@ packages:
   /press-ui/1.3.39:
     resolution: {integrity: sha512-w22hKAPlUZcR/Ub7MliNFMIH75iugm2BKPHZCIRhQ/zsyhSt+1wbilpmXC3YztHhVpX1iddYA8Rrto7ZpPrJEw==}
     dependencies:
-      t-comm: 1.3.94
+      t-comm: 1.3.101
     transitivePeerDependencies:
       - canvas
       - debug
     dev: true
 
-  /press-ui/2.1.13:
-    resolution: {integrity: sha512-VNajZZ+eyjczRi8GcCPdR+qU0Q1vexWc8vvznhJAQHdmRqi8mhyTG51w31dPVXr1zNK8Feo+RBuzSDZb33UW/w==}
+  /press-ui/2.1.16:
+    resolution: {integrity: sha512-5Nhh4+97GJ2MaZSSas8e6UVi0LLkFyTnRjB5n7mVDrONAYMLaSrdLHAhNRoQF2ZIfxisPjKJ3wVzKvT1bRQg2Q==}
     engines: {node: '>=14'}
     dependencies:
       '@popperjs/core': 2.11.8
       swiper-next: 0.1.1
-      t-comm: 1.3.94
+      t-comm: 1.3.101
     transitivePeerDependencies:
       - canvas
       - debug
@@ -12315,13 +12346,14 @@ packages:
     resolution: {integrity: sha512-Nk8c4lXvMB98MtbmjX7JwJRgJOL8fluecYCfCeYBznwmpOs8Bf15hLM6z4z71EDAhQVrQrI+wt1aLWSXZq+hXA==}
     dev: true
 
-  /t-comm/1.3.94:
-    resolution: {integrity: sha512-D0Cw9GpT50qHzTHn8Ot2XRi6HRWDwp7iPPhWDdsPxNp/UGLaPs9Hdl9k9qFnlsfsNCgggPSqSemT8PYUKcKVrA==}
+  /t-comm/1.3.101:
+    resolution: {integrity: sha512-G10OSVS2dL22eYlYfX5h+tIxjRZ0r0wNpnMUepykm/SV9pL8PBzTP4C9AXChPqQxQ2sSdWG+mIqGz+v6idUaHA==}
     hasBin: true
     peerDependencies:
       canvas: ^2.6.1
     dependencies:
       '@babel/runtime': 7.24.7
+      '@commitlint/config-conventional': 17.8.1
       axios: 1.7.2
       cheerio: 1.0.0-rc.12
       commander: 10.0.1
