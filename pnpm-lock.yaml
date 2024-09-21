@@ -20,6 +20,9 @@ specifiers:
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001
   '@dcloudio/uni-stacktracey': 3.0.0-3081220230817001
   '@dcloudio/vite-plugin-uni': 3.0.0-3081220230817001
+  '@plugin-light/vite-plugin-gen-version': ^0.0.7
+  '@plugin-light/vite-plugin-rem-to-rpx': ^0.0.6
+  '@plugin-light/vite-plugin-transform-v-lazy': ^0.0.6
   '@popperjs/core': ^2.11.8
   '@types/jest': ^29.5.4
   '@types/node': ^20.6.0
@@ -31,7 +34,7 @@ specifiers:
   gulp: ^4.0.2
   plugin-light: latest
   press-plus: ^1.3.53
-  press-ui: ^2.1.16
+  press-ui: ^2.1.22
   qrcode.vue: ^3.4.1
   sass: ^1.66.1
   sass-loader: ^13.3.2
@@ -67,8 +70,8 @@ dependencies:
   '@dcloudio/uni-mp-weixin': 3.0.0-3081220230817001_vue@3.4.31
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001_vue@3.4.31
   '@popperjs/core': 2.11.8
-  press-plus: 1.5.20_press-ui@2.1.16
-  press-ui: 2.1.16
+  press-plus: 1.5.20_press-ui@2.1.22
+  press-ui: 2.1.22
   qrcode.vue: 3.4.1_vue@3.4.31
   swiper-next: 0.1.1
   t-comm: 1.3.101
@@ -87,6 +90,9 @@ devDependencies:
   '@dcloudio/uni-cli-shared': 3.0.0-3081220230817001_vue@3.4.31
   '@dcloudio/uni-stacktracey': 3.0.0-3081220230817001
   '@dcloudio/vite-plugin-uni': 3.0.0-3081220230817001_vite@4.1.4+vue@3.4.31
+  '@plugin-light/vite-plugin-gen-version': 0.0.7
+  '@plugin-light/vite-plugin-rem-to-rpx': 0.0.6
+  '@plugin-light/vite-plugin-transform-v-lazy': 0.0.6
   '@types/jest': 29.5.12
   '@types/node': 20.14.9
   '@vue/runtime-core': 3.4.31
@@ -3232,6 +3238,54 @@ packages:
     dev: true
     optional: true
 
+  /@plugin-light/shared/0.0.11:
+    resolution: {integrity: sha512-6MLWFJypBAQEORej387EQdmG4b6kqHPlOpUguH8bS3gu0E2KzQtIQ7cJXjtvu58mPXtZHnSwlCdqSeU4/7eHQg==}
+    dependencies:
+      t-comm: 1.3.104
+    transitivePeerDependencies:
+      - canvas
+      - debug
+    dev: true
+
+  /@plugin-light/vite-plugin-gen-version/0.0.7:
+    resolution: {integrity: sha512-ROyF+XovXhiyC3TbrTYGuthYCf3S53zy3FowgMbpYSaBWYbNIQNu9ZQiI4/7SgMMQr4doPoWZqKDZAn95DfHjg==}
+    dependencies:
+      '@plugin-light/shared': 0.0.11
+    transitivePeerDependencies:
+      - canvas
+      - debug
+    dev: true
+
+  /@plugin-light/vite-plugin-rem-to-rpx/0.0.6:
+    resolution: {integrity: sha512-/0iAY9K8qEQIoPZXmaZg8oRA0kVwAog8vJ5AdvjOnIP0iKMHcU6RXev076eTPrVlRo2EaSdB97h7PgQ393RShg==}
+    dependencies:
+      '@plugin-light/shared': 0.0.11
+      '@plugin-light/webpack-plugin-rem-to-rpx': 0.0.4
+      t-comm: 1.3.104
+    transitivePeerDependencies:
+      - canvas
+      - debug
+    dev: true
+
+  /@plugin-light/vite-plugin-transform-v-lazy/0.0.6:
+    resolution: {integrity: sha512-tD+bSIYU3KJ6Nsifz/+50QMGrogaYf9lO4d4fwsRHWKaLUMIoMNkVCFsIZLrFktPVM6v54CBJHfhcmzvh8hoOQ==}
+    dependencies:
+      '@plugin-light/shared': 0.0.11
+    transitivePeerDependencies:
+      - canvas
+      - debug
+    dev: true
+
+  /@plugin-light/webpack-plugin-rem-to-rpx/0.0.4:
+    resolution: {integrity: sha512-L5QrDa9O8JYnYLocquuJvqOa55j/udgNYxFU79gWPtdnweTssjkokPIJZAmW20OPCCmpYSA5LtEIF71anRHOEA==}
+    dependencies:
+      '@plugin-light/shared': 0.0.11
+      t-comm: 1.3.104
+    transitivePeerDependencies:
+      - canvas
+      - debug
+    dev: true
+
   /@popperjs/core/2.11.8:
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
     dev: false
@@ -5156,7 +5210,6 @@ packages:
 
   /chokidar/1.7.0:
     resolution: {integrity: sha512-mk8fAWcRUOxY7btlLtitj3A45jOwSAxH4tOFOoEGbVsl6cL6pPMWUy7dwZ/canfj3QEdP6FHSnf/l1c6/WkzVg==}
-    deprecated: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
     dependencies:
       anymatch: 1.3.2
       async-each: 1.0.6
@@ -7435,7 +7488,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
@@ -10398,7 +10451,7 @@ packages:
       progress-bar-webpack-plugin: 2.1.0
       rollup-plugin-visualizer: 5.12.0
       script-ext-html-webpack-plugin: 2.1.5
-      t-comm: 1.3.101
+      t-comm: 1.3.104
       uni-read-pages: 1.0.5
       unplugin-auto-import: 0.18.2
       unplugin-vue-components: 0.27.3_vue@3.4.31
@@ -10733,12 +10786,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /press-plus/1.5.20_press-ui@2.1.16:
+  /press-plus/1.5.20_press-ui@2.1.22:
     resolution: {integrity: sha512-/VbbRaYLe4itw1o83aBeySp/w5beFx1Ij6TJ17LSBQoImlreoCEfmEYgQA8/a169uq04tF8LN1zfjHV9PJtlpQ==}
     peerDependencies:
       press-ui: ^1.3.13
     dependencies:
-      press-ui: 2.1.16
+      press-ui: 2.1.22
       t-comm: 1.3.101
     transitivePeerDependencies:
       - canvas
@@ -10748,19 +10801,19 @@ packages:
   /press-ui/1.3.39:
     resolution: {integrity: sha512-w22hKAPlUZcR/Ub7MliNFMIH75iugm2BKPHZCIRhQ/zsyhSt+1wbilpmXC3YztHhVpX1iddYA8Rrto7ZpPrJEw==}
     dependencies:
-      t-comm: 1.3.101
+      t-comm: 1.3.104
     transitivePeerDependencies:
       - canvas
       - debug
     dev: true
 
-  /press-ui/2.1.16:
-    resolution: {integrity: sha512-5Nhh4+97GJ2MaZSSas8e6UVi0LLkFyTnRjB5n7mVDrONAYMLaSrdLHAhNRoQF2ZIfxisPjKJ3wVzKvT1bRQg2Q==}
+  /press-ui/2.1.22:
+    resolution: {integrity: sha512-78QXARqgUBIJ+aBgUfDLvcudQ3yt0cizDBVTQb3tgyt1YCbxnXrvaX1CxFF4EW7P4nB1sMKnVl14+uB0US6EhA==}
     engines: {node: '>=14'}
     dependencies:
       '@popperjs/core': 2.11.8
       swiper-next: 0.1.1
-      t-comm: 1.3.101
+      t-comm: 1.3.104
     transitivePeerDependencies:
       - canvas
       - debug
@@ -12348,6 +12401,25 @@ packages:
 
   /t-comm/1.3.101:
     resolution: {integrity: sha512-G10OSVS2dL22eYlYfX5h+tIxjRZ0r0wNpnMUepykm/SV9pL8PBzTP4C9AXChPqQxQ2sSdWG+mIqGz+v6idUaHA==}
+    hasBin: true
+    peerDependencies:
+      canvas: ^2.6.1
+    dependencies:
+      '@babel/runtime': 7.24.7
+      '@commitlint/config-conventional': 17.8.1
+      axios: 1.7.2
+      cheerio: 1.0.0-rc.12
+      commander: 10.0.1
+      cron-parser: 4.9.0
+      qs: 6.12.2
+      request: 2.88.2
+      tar: 6.2.1
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /t-comm/1.3.104:
+    resolution: {integrity: sha512-0vlO9qOqoYgt/WozF/pxcfDM5lLLxnLkBXBuLrMk6AZ44D6xsxXgAyLAi/xWTAUWbUcFv9SX7Gsx7BN+a7L7zg==}
     hasBin: true
     peerDependencies:
       canvas: ^2.6.1

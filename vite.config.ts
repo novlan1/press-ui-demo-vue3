@@ -2,13 +2,12 @@ import path from 'path';
 // import requireTransform from 'vite-plugin-require-transform';
 import { defineConfig } from 'vite';
 import uni from '@dcloudio/vite-plugin-uni';
-import {
-  transformVLazyVitePlugin,
-  remToRpxVitePlugin,
-  genVersionMpVitePlugin,
-  genVersionWebVitePlugin,
-} from 'plugin-light/lib/plugin';
+
+import { genVersionMpVitePlugin, genVersionWebVitePlugin } from '@plugin-light/vite-plugin-gen-version';
+import { remToRpxVitePlugin } from '@plugin-light/vite-plugin-rem-to-rpx';
+import { transformVLazyVitePlugin } from '@plugin-light/vite-plugin-transform-v-lazy';
 import { BUILD_NAME_MAP } from 't-comm/lib/v-console/config';
+
 
 const CUSTOM_ELEMENTS = [
   'Button',
