@@ -16,7 +16,8 @@
     "types": [
       "@dcloudio/types",
       "node"
-    ]
+    ],
+    "noImplicitAny": false,
   },
   "include": [
     "src/**/*.ts",

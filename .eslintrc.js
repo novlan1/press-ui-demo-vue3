@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['eslint-config-light'],
+  extends: ['eslint-config-light-vue3'],
   globals: {
     getCurrentPages: true,
     qq: true,
