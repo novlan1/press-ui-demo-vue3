@@ -36,14 +36,14 @@ specifiers:
   jest: ^29.7.0
   plugin-light: latest
   press-plus: ^1.3.53
-  press-ui: ^2.1.22
+  press-ui: 2.2.0-alpha.0
   qrcode.vue: ^3.4.1
   sass: ^1.66.1
   sass-loader: ^13.3.2
   stylelint: ^15.10.3
   stylelint-config-common: ^1.0.10
   swiper-next: ^0.1.1
-  t-comm: ^1.3.101
+  t-comm: ^1.3.106
   typescript: ^4.9.4
   uqrcodejs: ^4.0.7
   vite: 4.1.4
@@ -72,11 +72,11 @@ dependencies:
   '@dcloudio/uni-mp-weixin': 3.0.0-3081220230817001_vue@3.4.31
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001_vue@3.4.31
   '@popperjs/core': 2.11.8
-  press-plus: 1.5.20_press-ui@2.1.22
-  press-ui: 2.1.22
+  press-plus: 1.5.20_press-ui@2.2.0-alpha.0
+  press-ui: 2.2.0-alpha.0
   qrcode.vue: 3.4.1_vue@3.4.31
   swiper-next: 0.1.1
-  t-comm: 1.3.101
+  t-comm: 1.3.106
   uqrcodejs: 4.0.7
   vite-plugin-require-transform: 1.0.21
   vue: 3.4.31_typescript@4.9.5
@@ -3463,7 +3463,7 @@ packages:
   /@plugin-light/shared/0.0.11:
     resolution: {integrity: sha512-6MLWFJypBAQEORej387EQdmG4b6kqHPlOpUguH8bS3gu0E2KzQtIQ7cJXjtvu58mPXtZHnSwlCdqSeU4/7eHQg==}
     dependencies:
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -3483,7 +3483,7 @@ packages:
     dependencies:
       '@plugin-light/shared': 0.0.11
       '@plugin-light/webpack-plugin-rem-to-rpx': 0.0.4
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -3502,7 +3502,7 @@ packages:
     resolution: {integrity: sha512-L5QrDa9O8JYnYLocquuJvqOa55j/udgNYxFU79gWPtdnweTssjkokPIJZAmW20OPCCmpYSA5LtEIF71anRHOEA==}
     dependencies:
       '@plugin-light/shared': 0.0.11
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -11557,7 +11557,7 @@ packages:
       progress-bar-webpack-plugin: 2.1.0
       rollup-plugin-visualizer: 5.12.0
       script-ext-html-webpack-plugin: 2.1.5
-      t-comm: 1.3.104
+      t-comm: 1.3.106
       uni-read-pages: 1.0.5
       unplugin-auto-import: 0.18.2
       unplugin-vue-components: 0.27.3_vue@3.4.31
@@ -11892,13 +11892,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /press-plus/1.5.20_press-ui@2.1.22:
+  /press-plus/1.5.20_press-ui@2.2.0-alpha.0:
     resolution: {integrity: sha512-/VbbRaYLe4itw1o83aBeySp/w5beFx1Ij6TJ17LSBQoImlreoCEfmEYgQA8/a169uq04tF8LN1zfjHV9PJtlpQ==}
     peerDependencies:
       press-ui: ^1.3.13
     dependencies:
-      press-ui: 2.1.22
-      t-comm: 1.3.101
+      press-ui: 2.2.0-alpha.0
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -11907,19 +11907,19 @@ packages:
   /press-ui/1.3.39:
     resolution: {integrity: sha512-w22hKAPlUZcR/Ub7MliNFMIH75iugm2BKPHZCIRhQ/zsyhSt+1wbilpmXC3YztHhVpX1iddYA8Rrto7ZpPrJEw==}
     dependencies:
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
     dev: true
 
-  /press-ui/2.1.22:
-    resolution: {integrity: sha512-78QXARqgUBIJ+aBgUfDLvcudQ3yt0cizDBVTQb3tgyt1YCbxnXrvaX1CxFF4EW7P4nB1sMKnVl14+uB0US6EhA==}
+  /press-ui/2.2.0-alpha.0:
+    resolution: {integrity: sha512-HLDqIdL8fwsJtqBZnh0drLNXD7BI4ij9rBkSOkKqtfhC00mpb5D1dabDMRSujadofFc6oaNsWq502DE6AuXChA==}
     engines: {node: '>=14'}
     dependencies:
       '@popperjs/core': 2.11.8
       swiper-next: 0.1.1
-      t-comm: 1.3.104
+      t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
       - debug
@@ -13576,27 +13576,8 @@ packages:
     resolution: {integrity: sha512-Nk8c4lXvMB98MtbmjX7JwJRgJOL8fluecYCfCeYBznwmpOs8Bf15hLM6z4z71EDAhQVrQrI+wt1aLWSXZq+hXA==}
     dev: true
 
-  /t-comm/1.3.101:
-    resolution: {integrity: sha512-G10OSVS2dL22eYlYfX5h+tIxjRZ0r0wNpnMUepykm/SV9pL8PBzTP4C9AXChPqQxQ2sSdWG+mIqGz+v6idUaHA==}
-    hasBin: true
-    peerDependencies:
-      canvas: ^2.6.1
-    dependencies:
-      '@babel/runtime': 7.24.7
-      '@commitlint/config-conventional': 17.8.1
-      axios: 1.7.2
-      cheerio: 1.0.0-rc.12
-      commander: 10.0.1
-      cron-parser: 4.9.0
-      qs: 6.12.2
-      request: 2.88.2
-      tar: 6.2.1
-    transitivePeerDependencies:
-      - debug
-    dev: false
-
-  /t-comm/1.3.104:
-    resolution: {integrity: sha512-0vlO9qOqoYgt/WozF/pxcfDM5lLLxnLkBXBuLrMk6AZ44D6xsxXgAyLAi/xWTAUWbUcFv9SX7Gsx7BN+a7L7zg==}
+  /t-comm/1.3.106:
+    resolution: {integrity: sha512-lSAJSgj+Lq5AqDjTOHqPexmpqOMs3GQFTNbIs1UI9rULEip3SAB/4ftqjC2v/MUI6eIXkEnkltaDQNcuj9RepQ==}
     hasBin: true
     peerDependencies:
       canvas: ^2.6.1

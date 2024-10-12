@@ -96,6 +96,12 @@
           }
         },
         {
+          "path": "color-picker/color-picker",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
           "path": "datetime-picker/datetime-picker",
           "style": {
             "navigationBarTitleText": ""
@@ -181,6 +187,12 @@
         },
         {
           "path": "dropdown-menu/dropdown-menu",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
+          "path": "guide/guide",
           "style": {
             "navigationBarTitleText": ""
           }

@@ -1,6 +1,6 @@
 {
   "name": "press-ui-demo-vue3",
-  "version": "2.1.22",
+  "version": "2.2.0-alpha.0",
   "private": true,
   "description": "简单、易用的跨端组件库，兼容 Vue2 和 Vue3，同时支持 uni-app和普通 Vue 项目",
   "repository": {
@@ -75,10 +75,10 @@
     "@dcloudio/uni-quickapp-webview": "3.0.0-3081220230817001",
     "@popperjs/core": "^2.11.8",
     "press-plus": "^1.3.53",
-    "press-ui": "^2.1.22",
+    "press-ui": "2.2.0-alpha.0",
     "qrcode.vue": "^3.4.1",
     "swiper-next": "^0.1.1",
-    "t-comm": "^1.3.101",
+    "t-comm": "^1.3.106",
     "uqrcodejs": "^4.0.7",
     "vite-plugin-require-transform": "^1.0.21",
     "vue": "^3.2.45",

@@ -171,6 +171,28 @@ export default {
 />
 ```
 
+### 支持 v-html
+
+如果 `option.html` 不为空，则会渲染 `option.html`。
+
+```js
+const tagHtml = `
+<div style="position: relative;width: 100%;height: 100%;display:flex; align-items:center;justify-content: center;">杭州
+ <span style="position: absolute; top: 0; left: calc(50% + 19px);color: #fff;font-size: 10px;background: rgba(83, 0, 195, 0.75);width: 26px; height: 13px;line-height: 13px;">常用</span>
+</div>
+`;
+
+const column3 = {
+  浙江: [
+    {
+      html: tagHtml,
+    },
+    '宁波', '温州', '嘉兴', '湖州',
+  ],
+  福建: ['福州', '厦门', '莆田', '三明', '泉州'],
+};
+```
+
 ### 结合 PopupPlus
 
 提供了简单的 `PopupPlus` 和 `PickerPlus` 的组合，供业务快速使用。
@@ -200,23 +222,25 @@ export default {
 
 ### Props
 
-| 参数                | 说明                                                                  | 类型      | 默认值  |
-| ------------------- | --------------------------------------------------------------------- | --------- | ------- |
-| columns             | 对象数组，配置每一列显示的数据                                        | _Array_   | `[]`    |
-| show-toolbar        | 是否显示顶部栏                                                        | _boolean_ | `false` |
-| toolbar-position    | 顶部栏位置，可选值为`bottom`                                          | _string_  | `top`   |
-| title               | 顶部栏标题                                                            | _string_  | `''`    |
-| loading             | 是否显示加载状态                                                      | _boolean_ | `false` |
-| value-key           | 选项对象中，文字对应的 key                                            | _string_  | `text`  |
-| item-height         | 选项高度                                                              | _number_  | `44`    |
-| confirm-button-text | 确认按钮文字                                                          | _string_  | `确认`  |
-| cancel-button-text  | 取消按钮文字                                                          | _string_  | `取消`  |
-| visible-item-count  | 可见的选项个数                                                        | _number_  | `6`     |
-| default-index       | 单列选择器的默认选中项索引，<br>多列选择器请参考下方的 `Columns` 配置 | _number_  | `0`     |
-| custom-class        | 根节点样式类                                                          | _string_  | -       |
-| active-class        | 选中项样式类                                                          | _string_  | -       |
-| toolbar-class       | 顶部栏样式类                                                          | _string_  | -       |
-| column-class        | 列样式类                                                              | _string_  | -       |
+| 参数                | 说明                                                                  | 类型               | 默认值  |
+| ------------------- | --------------------------------------------------------------------- | ------------------ | ------- |
+| columns             | 对象数组，配置每一列显示的数据                                        | _Array_            | `[]`    |
+| show-toolbar        | 是否显示顶部栏                                                        | _boolean_          | `false` |
+| toolbar-position    | 顶部栏位置，可选值为`bottom`                                          | _string_           | `top`   |
+| title               | 顶部栏标题                                                            | _string_           | `''`    |
+| loading             | 是否显示加载状态                                                      | _boolean_          | `false` |
+| value-key           | 选项对象中，文字对应的 key                                            | _string_           | `text`  |
+| item-height         | 选项高度                                                              | _number_           | `44`    |
+| confirm-button-text | 确认按钮文字                                                          | _string_           | `确认`  |
+| cancel-button-text  | 取消按钮文字                                                          | _string_           | `取消`  |
+| visible-item-count  | 可见的选项个数                                                        | _number_           | `6`     |
+| default-index       | 单列选择器的默认选中项索引，<br>多列选择器请参考下方的 `Columns` 配置 | _number_           | `0`     |
+| custom-class        | 根节点样式类                                                          | _string_           | -       |
+| active-class        | 选中项样式类                                                          | _string_           | -       |
+| toolbar-class       | 顶部栏样式类                                                          | _string_           | -       |
+| column-class        | 列样式类                                                              | _string_           | -       |
+| use-momentum        | 是否使用惯性滚动                                                      | _boolean_          | `false` |
+| swipe-duration      | 快速滑动时惯性滚动的时长，单位 `ms`                                   | _number \| string_ | `1000`  |
 
 ### Events
 

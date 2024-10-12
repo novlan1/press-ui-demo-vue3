@@ -1,18 +1,45 @@
 import { getScrollSelector } from './scroll';
 import { isNotInUni } from '../utils/utils';
 import { getSystemInfoSync } from '../utils/system';
+// #ifdef H5
+import getWindowOffset from '../utils/get-window-offset';
+// #endif
+
+
+// 非 uni-app H5下， pageY、clientY 去除 window-top
+export function getRealPageYOrClientY(value) {
+  // #ifdef H5
+  const {
+    top = 0,
+  } = getWindowOffset();
+
+  if (isNotInUni()) {
+    return value - top;
+  }
+  // #endif
+  return value;
+}
+
 
 export function getWindowWidth() {
   // #ifdef H5
   if (isNotInUni()) {
     const windowWidth = Math.min(window.innerWidth, document.documentElement.clientWidth, screen.width);
-    const windowHeight = Math.min(window.innerHeight, document.documentElement.clientHeight, screen.height);
+    let windowHeight = Math.min(window.innerHeight, document.documentElement.clientHeight, screen.height);
+
+    const {
+      top: windowTop,
+      bottom: windowBottom,
+    } = getWindowOffset();
+
+    windowHeight -= windowTop;
+    windowHeight -= windowBottom;
 
     return {
       windowWidth,
       windowHeight,
-      windowTop: 0,
-      windowBottom: 0,
+      windowTop,
+      windowBottom,
     };
   }
   // #endif
@@ -71,26 +98,66 @@ export function getScrollHeight(context, id) {
   });
 }
 
-export function getRect(context, selector) {
+export function getRect(context, selector, searchBody = false) {
   return new Promise((resolve) => {
     // #ifdef H5
-    const el = context.$el;
-    if (el) {
-      const child =  el.querySelector(selector);
-      if (!child) {
-        resolve({});
-      }
-      const rect = child.getBoundingClientRect();
-      resolve(rect);
-      return;
+    const el = context?.$el;
+    let child = el?.querySelector(selector);
+
+    if (!child && searchBody) {
+      child = document.querySelector(selector);
+    }
+
+    if (child) {
+      const rect = child.getBoundingClientRect() || {};
+
+      const {
+        top,
+      } = getWindowOffset();
+
+      let result = {
+        left: rect.left,
+        right: rect.right,
+        width: rect.width,
+        height: rect.height,
+
+        x: rect.x,
+        y: rect.y,
+
+        top: rect.top,
+        bottom: rect.bottom,
+      };
+
+      // if (isNotInUni()) {
+      result = {
+        ...result,
+        // 参考 uni-app 中 src/core/view/bridge/subscribe/api/request-component-info.js
+        // 减去 windowTop
+        top: rect.top - top,
+        bottom: rect.bottom - top,
+      };
+      // }
+
+      resolve(result);
+    } else {
+      resolve({});
     }
     // #endif
 
-    uni.createSelectorQuery()
-      .in(context)
-      .select(selector)
-      .boundingClientRect()
-      .exec((rect = []) => resolve(rect[0]));
+    // #ifndef H5
+    if (context) {
+      uni.createSelectorQuery()
+        .in(context)
+        .select(selector)
+        .boundingClientRect()
+        .exec((rect = []) => resolve(rect[0]));
+    } else {
+      uni.createSelectorQuery()
+        .select(selector)
+        .boundingClientRect()
+        .exec((rect = []) => resolve(rect[0]));
+    }
+    // #endif
   });
 }
 

@@ -1,13 +1,13 @@
 import { createSSRApp } from 'vue';
 import App from './App.vue';
-import DemoBlock from './packages/press-demo-block/press-demo-block.vue';
+import DemoBlock from 'press-ui/press-demo-block/press-demo-block.vue';
 
-import { initDemoI18n } from './packages/locale/demo-lang';
+import { initDemoI18n } from 'press-ui/locale/demo-lang';
 import { initMixin } from './utils/mixin/mixin';
 
-import PressCell from './packages/press-cell/press-cell.vue';
-import PressPicker from './packages/press-picker/press-picker.vue';
-import PressPopupCell from './packages/press-popup-cell/press-popup-cell.vue';
+import PressCell from 'press-ui/press-cell/press-cell.vue';
+import PressPicker from 'press-ui/press-picker/press-picker.vue';
+import PressPopupCell from 'press-ui/press-popup-cell/press-popup-cell.vue';
 
 
 export function createApp() {

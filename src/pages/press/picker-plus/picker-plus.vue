@@ -64,7 +64,8 @@
 
     <PressPickerPlusPopupPlus
       :show="showPopupPlus"
-      :columns="columns"
+      :columns="momentumColumns"
+      :use-momentum="true"
       @change="onChange"
       @cancel="showPopupPlus = false"
       @confirm="confirmPopupPlus"
@@ -158,6 +159,11 @@ const cascadeColumns = {
   ],
 };
 
+const tagHtml = `
+<div style="position: relative;width: 100%;height: 100%;display:flex; align-items:center;justify-content: center;">杭州
+ <span style="position: absolute; top: 0; left: calc(50% + 19px);color: #fff;font-size: 10px;background: rgba(83, 0, 195, 0.75);width: 26px; height: 13px;line-height: 13px;">常用</span>
+</div>
+`;
 
 export default {
   i18n: {
@@ -189,7 +195,13 @@ export default {
         { text: '温州' },
       ],
       column3: {
-        浙江: ['杭州', '宁波', '温州', '嘉兴', '湖州'],
+        浙江: [
+          {
+            html: tagHtml,
+            text: '杭州',
+          },
+          '宁波', '温州', '嘉兴', '湖州',
+        ],
         福建: ['福州', '厦门', '莆田', '三明', '泉州'],
       },
       toastContent: (value, index) => `当前值：${value}, 当前索引：${index}`,
@@ -228,6 +240,7 @@ export default {
   data() {
     return {
       showPopupPlus: false,
+      momentumColumns: Array.from({ length: 500 }).map((item, index) => `Momentum ${index + 1}`),
     };
   },
   computed: {
@@ -260,7 +273,7 @@ export default {
       const values = this.$refs.picker.getValues();
       const indexes = this.$refs.picker.getIndexes();
       this.onTip({
-        value: values,
+        value: values.map(item => item.text || item),
         index: indexes,
       });
     },
