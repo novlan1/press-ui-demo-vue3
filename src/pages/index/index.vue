@@ -50,18 +50,18 @@ function getAllPages() {
 
 
   // #ifdef VUE3 && MP-QQ
-  if (['develop', 'trial'].includes(getEnvVersion())) {
-    pages = pages.slice(2);
-    let list = pages.reduce((acc, item) => [
-      ...acc,
-      ...item.list,
-    ], []);
-    list = list.slice(list.length - 6);
-    pages = [{
-      name: 'Vue3 组件',
-      list,
-    }];
-  }
+  // if (['develop', 'trial'].includes(getEnvVersion())) {
+  //   pages = pages.slice(2);
+  //   let list = pages.reduce((acc, item) => [
+  //     ...acc,
+  //     ...item.list,
+  //   ], []);
+  //   list = list.slice(list.length - 6);
+  //   pages = [{
+  //     name: 'Vue3 组件',
+  //     list,
+  //   }];
+  // }
   // #endif
 
   return pages;
