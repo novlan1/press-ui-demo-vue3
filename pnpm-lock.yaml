@@ -34,9 +34,10 @@ specifiers:
   glob: ^11.0.0
   gulp: ^4.0.2
   jest: ^29.7.0
+  lodash: ^4.17.21
   plugin-light: latest
   press-plus: ^1.3.53
-  press-ui: 2.2.0-alpha.0
+  press-ui: 2.2.0-alpha.1
   qrcode.vue: ^3.4.1
   sass: ^1.66.1
   sass-loader: ^13.3.2
@@ -44,6 +45,7 @@ specifiers:
   stylelint-config-common: ^1.0.10
   swiper-next: ^0.1.1
   t-comm: ^1.3.106
+  tinycolor2: ^1.6.0
   typescript: ^4.9.4
   uqrcodejs: ^4.0.7
   vite: 4.1.4
@@ -72,11 +74,13 @@ dependencies:
   '@dcloudio/uni-mp-weixin': 3.0.0-3081220230817001_vue@3.4.31
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001_vue@3.4.31
   '@popperjs/core': 2.11.8
-  press-plus: 1.5.20_press-ui@2.2.0-alpha.0
-  press-ui: 2.2.0-alpha.0
+  lodash: 4.17.21
+  press-plus: 1.5.20_press-ui@2.2.0-alpha.1
+  press-ui: 2.2.0-alpha.1
   qrcode.vue: 3.4.1_vue@3.4.31
   swiper-next: 0.1.1
   t-comm: 1.3.106
+  tinycolor2: 1.6.0
   uqrcodejs: 4.0.7
   vite-plugin-require-transform: 1.0.21
   vue: 3.4.31_typescript@4.9.5
@@ -10304,7 +10308,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /log-ok/0.1.1:
     resolution: {integrity: sha512-cc8VrkS6C+9TFuYAwuHpshrcrGRAv7d0tUJ0GdM72ZBlKXtlgjUZF84O+OhQUdiVHoF7U/nVxwpjOdwUJ8d3Vg==}
@@ -11892,12 +11895,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /press-plus/1.5.20_press-ui@2.2.0-alpha.0:
+  /press-plus/1.5.20_press-ui@2.2.0-alpha.1:
     resolution: {integrity: sha512-/VbbRaYLe4itw1o83aBeySp/w5beFx1Ij6TJ17LSBQoImlreoCEfmEYgQA8/a169uq04tF8LN1zfjHV9PJtlpQ==}
     peerDependencies:
       press-ui: ^1.3.13
     dependencies:
-      press-ui: 2.2.0-alpha.0
+      press-ui: 2.2.0-alpha.1
       t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
@@ -11913,8 +11916,8 @@ packages:
       - debug
     dev: true
 
-  /press-ui/2.2.0-alpha.0:
-    resolution: {integrity: sha512-HLDqIdL8fwsJtqBZnh0drLNXD7BI4ij9rBkSOkKqtfhC00mpb5D1dabDMRSujadofFc6oaNsWq502DE6AuXChA==}
+  /press-ui/2.2.0-alpha.1:
+    resolution: {integrity: sha512-Omy7LdUWjspMvDBImQA7ArlIkfmzoZxro/zQNPHVc4zBtRJCIdIbKJ280XUimKFwCYVmbjoWX4pZgqOmQfsm1g==}
     engines: {node: '>=14'}
     dependencies:
       '@popperjs/core': 2.11.8
