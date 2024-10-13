@@ -1,1 +1,0 @@
-function r(e){return void 0===e?"":Array.isArray(e)?e.filter((r=>null!=r&&""!==r)).map((e=>r(e))).join(";"):"string"==typeof e?e:Object.keys(e).filter((r=>null!=e[r]&&""!==e[r])).map((r=>{return[(n=r,n.replace(/[A-Z]/g,(r=>`-${r}`)).toLowerCase()),[e[r]]].join(":");var n})).join(";")}export{r as s};
