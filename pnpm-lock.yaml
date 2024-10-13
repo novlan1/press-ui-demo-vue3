@@ -37,7 +37,7 @@ specifiers:
   lodash: ^4.17.21
   plugin-light: latest
   press-plus: ^1.3.53
-  press-ui: 2.2.0-alpha.1
+  press-ui: 2.2.0-alpha.2
   qrcode.vue: ^3.4.1
   sass: ^1.66.1
   sass-loader: ^13.3.2
@@ -75,8 +75,8 @@ dependencies:
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001_vue@3.4.31
   '@popperjs/core': 2.11.8
   lodash: 4.17.21
-  press-plus: 1.5.20_press-ui@2.2.0-alpha.1
-  press-ui: 2.2.0-alpha.1
+  press-plus: 1.5.20_press-ui@2.2.0-alpha.2
+  press-ui: 2.2.0-alpha.2
   qrcode.vue: 3.4.1_vue@3.4.31
   swiper-next: 0.1.1
   t-comm: 1.3.106
@@ -5895,7 +5895,7 @@ packages:
     dev: true
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
   /concat-stream/1.6.2:
@@ -8858,6 +8858,7 @@ packages:
 
   /inflight/1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
@@ -11895,12 +11896,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /press-plus/1.5.20_press-ui@2.2.0-alpha.1:
+  /press-plus/1.5.20_press-ui@2.2.0-alpha.2:
     resolution: {integrity: sha512-/VbbRaYLe4itw1o83aBeySp/w5beFx1Ij6TJ17LSBQoImlreoCEfmEYgQA8/a169uq04tF8LN1zfjHV9PJtlpQ==}
     peerDependencies:
       press-ui: ^1.3.13
     dependencies:
-      press-ui: 2.2.0-alpha.1
+      press-ui: 2.2.0-alpha.2
       t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
@@ -11916,8 +11917,8 @@ packages:
       - debug
     dev: true
 
-  /press-ui/2.2.0-alpha.1:
-    resolution: {integrity: sha512-Omy7LdUWjspMvDBImQA7ArlIkfmzoZxro/zQNPHVc4zBtRJCIdIbKJ280XUimKFwCYVmbjoWX4pZgqOmQfsm1g==}
+  /press-ui/2.2.0-alpha.2:
+    resolution: {integrity: sha512-bCn1O4ZljsHIPrNpQ5qnZo2/iMvLXjeYvQ26PHbW/Dow3EuJFO3F8bRUTWmh1Yfbpm9+GklDuwH4m41OoGPnCg==}
     engines: {node: '>=14'}
     dependencies:
       '@popperjs/core': 2.11.8
@@ -12418,7 +12419,7 @@ packages:
     dev: true
 
   /repeat-string/1.6.1:
-    resolution: {integrity: sha1-jcrkcOHIirwtYA//Sndihtp15jc=}
+    resolution: {integrity: sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==}
     engines: {node: '>=0.10'}
     dev: true
 
