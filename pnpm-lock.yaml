@@ -37,7 +37,7 @@ specifiers:
   lodash: ^4.17.21
   plugin-light: latest
   press-plus: ^1.3.53
-  press-ui: 2.2.0-alpha.2
+  press-ui: 2.2.6
   qrcode.vue: ^3.4.1
   sass: ^1.66.1
   sass-loader: ^13.3.2
@@ -52,6 +52,7 @@ specifiers:
   vite-plugin-require-transform: ^1.0.21
   vue: ^3.2.45
   vue-barcode: ^1.3.0
+  vue-cropper: ^1.1.4
   vue-i18n: ^9.1.9
   vue-qrcode: ^2.2.0
   vue-tsc: ^1.0.24
@@ -75,8 +76,8 @@ dependencies:
   '@dcloudio/uni-quickapp-webview': 3.0.0-3081220230817001_vue@3.4.31
   '@popperjs/core': 2.11.8
   lodash: 4.17.21
-  press-plus: 1.5.20_press-ui@2.2.0-alpha.2
-  press-ui: 2.2.0-alpha.2
+  press-plus: 1.5.20_press-ui@2.2.6
+  press-ui: 2.2.6
   qrcode.vue: 3.4.1_vue@3.4.31
   swiper-next: 0.1.1
   t-comm: 1.3.106
@@ -85,6 +86,7 @@ dependencies:
   vite-plugin-require-transform: 1.0.21
   vue: 3.4.31_typescript@4.9.5
   vue-barcode: 1.3.0
+  vue-cropper: 1.1.4
   vue-i18n: 9.13.1_vue@3.4.31
   vue-qrcode: 2.2.2_vue@3.4.31
   vue3-barcode: 1.0.1_vwvfc4ezh6jlf6pa67auy3eulu
@@ -11896,12 +11898,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /press-plus/1.5.20_press-ui@2.2.0-alpha.2:
+  /press-plus/1.5.20_press-ui@2.2.6:
     resolution: {integrity: sha512-/VbbRaYLe4itw1o83aBeySp/w5beFx1Ij6TJ17LSBQoImlreoCEfmEYgQA8/a169uq04tF8LN1zfjHV9PJtlpQ==}
     peerDependencies:
       press-ui: ^1.3.13
     dependencies:
-      press-ui: 2.2.0-alpha.2
+      press-ui: 2.2.6
       t-comm: 1.3.106
     transitivePeerDependencies:
       - canvas
@@ -11917,8 +11919,8 @@ packages:
       - debug
     dev: true
 
-  /press-ui/2.2.0-alpha.2:
-    resolution: {integrity: sha512-bCn1O4ZljsHIPrNpQ5qnZo2/iMvLXjeYvQ26PHbW/Dow3EuJFO3F8bRUTWmh1Yfbpm9+GklDuwH4m41OoGPnCg==}
+  /press-ui/2.2.6:
+    resolution: {integrity: sha512-rycTeun3kNEYkqsweKIm5gf7OA11AkVttAOmL/62SQnPlqeZ6a8ddPx/Ay4wtnvRTuKYGjvSALlHMERlJ6Z8WQ==}
     engines: {node: '>=14'}
     dependencies:
       '@popperjs/core': 2.11.8
@@ -14615,6 +14617,10 @@ packages:
     resolution: {integrity: sha512-DxQ0hxes/dP6GajsJumpW6jV14VwlnTwStZbtE6G0wkewuJVDoDOdxUr5seGuxsMT9fJ0aty4X47Z5TG0M/gxg==}
     dependencies:
       jsbarcode: 3.11.6
+    dev: false
+
+  /vue-cropper/1.1.4:
+    resolution: {integrity: sha512-5m98vBsCEI9rbS4JxELxXidtAui3qNyTHLHg67Qbn7g8cg+E6LcnC+hh3SM/p94x6mFh6KRxT1ttnta+wCYqWA==}
     dev: false
 
   /vue-eslint-parser/9.4.3_eslint@8.57.0:
