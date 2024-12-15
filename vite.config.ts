@@ -1,6 +1,6 @@
 import path from 'path';
 // import requireTransform from 'vite-plugin-require-transform';
-import { defineConfig } from 'vite';
+import { defineConfig, type Plugin } from 'vite';
 import uni from '@dcloudio/vite-plugin-uni';
 
 import { genVersionMpVitePlugin, genVersionWebVitePlugin } from '@plugin-light/vite-plugin-gen-version';
@@ -15,7 +15,7 @@ const CUSTOM_ELEMENTS = [
   'Textarea',
 ];
 
-const diffPlugins = [];
+const diffPlugins: Array<Plugin> = [];
 if (process.env.UNI_PLATFORM !== 'h5') {
   diffPlugins.push(remToRpxVitePlugin());
   diffPlugins.push(genVersionMpVitePlugin());
@@ -34,7 +34,7 @@ export default defineConfig({
   //   requireTransform({
   //     fileRegex: /.js|.vue|.json$/,
   //  }),
-    transformVLazyVitePlugin(),
+    transformVLazyVitePlugin() as Plugin,
     ...diffPlugins,
     uni({
       vueOptions: {
