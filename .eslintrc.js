@@ -3,20 +3,18 @@ module.exports = {
   extends: ['eslint-config-light-vue3'],
   globals: {
     getCurrentPages: true,
+    uni: true,
+    globalThis: true,
     qq: true,
     weex: true,
     plus: true,
   },
-  settings: {
+  parserOptions: {
+    project: 'tsconfig.eslint.json',
+    ecmaVersion: 'latest',
+    extraFileExtensions: ['.vue'],
   },
   rules: {
     'vue/no-v-text-v-html-on-component': 0,
   },
-  parserOptions: {
-    project: 'tsconfig.json',
-    tsconfigRootDir: __dirname,
-    sourceType: 'module',
-  },
 };
-
-
