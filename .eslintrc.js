@@ -11,6 +11,9 @@ module.exports = {
   },
   parserOptions: {
     project: 'tsconfig.eslint.json',
+    // https://stackoverflow.com/questions/77792745/fatalerror-error-ts6046-argument-for-moduleresolution-option-must-be-nod
+    tsconfigRootDir: __dirname,
+
     ecmaVersion: 'latest',
     extraFileExtensions: ['.vue'],
   },

@@ -57,4 +57,13 @@ export default defineConfig({
   server: {
     port: 5001,
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // https://sass-lang.com/documentation/breaking-changes/legacy-js-api/
+        // https://sass-lang.com/documentation/breaking-changes/import/
+        silenceDeprecations: ['import', 'legacy-js-api'],
+      },
+    },
+  },
 });
