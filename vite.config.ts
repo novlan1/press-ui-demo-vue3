@@ -13,6 +13,7 @@ const CUSTOM_ELEMENTS = [
   'Button',
   'Input',
   'Textarea',
+  'Canvas',
 ];
 
 const diffPlugins: Array<Plugin> = [];
