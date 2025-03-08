@@ -15,6 +15,8 @@
       v-if="value && (useVueQrcodeInVue3 || globalUseVueQrcodeInVue3)"
       :value="value"
       v-bind="h5Attr"
+      type="image/png"
+      :color="color"
     />
     <!-- 使用 qrcode.vue，不使用 vueImage -->
     <PressQRCodeWeb
@@ -127,6 +129,17 @@ export default {
       type: Boolean,
       default: false,
     },
+    wxMpPadding: {
+      type: Number,
+      default: -1,
+    },
+    color: {
+      type: Object,
+      default: () => ({
+        dark: '#000000ff',
+        light: '#ffffffff',
+      }),
+    },
   },
   emits: [
     'result',
@@ -214,6 +227,7 @@ export default {
             background: '#ffffff',
             foreground: '#000000',
             text: this.value,
+            padding: this.wxMpPadding === -1 ? undefined : this.wxMpPadding,
           });
 
           wx.canvasToTempFilePath({

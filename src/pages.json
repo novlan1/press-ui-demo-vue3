@@ -156,6 +156,12 @@
           }
         },
         {
+          "path": "signature/signature",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
           "path": "slider/slider",
           "style": {
             "navigationBarTitleText": ""
@@ -181,6 +187,12 @@
         },
         {
           "path": "action-sheet/action-sheet",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
+          "path": "barrage/barrage",
           "style": {
             "navigationBarTitleText": ""
           }
@@ -354,6 +366,12 @@
           }
         },
         {
+          "path": "rolling-text/rolling-text",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
           "path": "skeleton/skeleton",
           "style": {
             "navigationBarTitleText": ""
@@ -379,6 +397,12 @@
         },
         {
           "path": "tag/tag",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
+          "path": "text-ellipsis/text-ellipsis",
           "style": {
             "navigationBarTitleText": ""
           }

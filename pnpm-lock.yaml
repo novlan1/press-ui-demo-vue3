@@ -58,10 +58,10 @@ importers:
         version: 4.17.21
       press-plus:
         specifier: ^1.3.53
-        version: 1.5.20(canvas@2.11.2)(press-ui@2.2.14)
+        version: 1.5.20(canvas@2.11.2)(press-ui@2.2.36)
       press-ui:
-        specifier: 2.2.14
-        version: 2.2.14
+        specifier: 2.2.36
+        version: 2.2.36
       qrcode.vue:
         specifier: ^3.4.1
         version: 3.6.0(vue@3.5.13(typescript@5.1.6))
@@ -6416,8 +6416,8 @@ packages:
   press-ui@1.3.39:
     resolution: {integrity: sha512-w22hKAPlUZcR/Ub7MliNFMIH75iugm2BKPHZCIRhQ/zsyhSt+1wbilpmXC3YztHhVpX1iddYA8Rrto7ZpPrJEw==}
 
-  press-ui@2.2.14:
-    resolution: {integrity: sha512-YobvdLtARL5YbPSTMWSHmWY9eqLBlpETs0BgqhJ/rdRWd0o1avhUEJkuvuSVgoXXgLR9rlsOkLIswRVuRqLwQA==}
+  press-ui@2.2.36:
+    resolution: {integrity: sha512-dv1KnDDoEQ3y8AoUtEqD6lxAu9vHcv4NhS5uLEWhXkfIz7zzpVubJQIo5ZFQXE9VS1VFYz3L1HbIm5WN8b+pCw==}
     engines: {node: '>=14'}
 
   prettier-linter-helpers@1.0.0:
@@ -7319,8 +7319,8 @@ packages:
     peerDependencies:
       canvas: ^2.6.1
 
-  t-comm@1.3.126:
-    resolution: {integrity: sha512-GI5auTS9FHucWvi4FZO4ls7FGd4ls6AeM5y+9rsSoI2ZTZKHtyu+7xdhcG9nsZXjbYSgbbjR9ZFv1DDuSyjLaA==}
+  t-comm@1.3.139:
+    resolution: {integrity: sha512-xHyiAg2EnAznKD76bJo5sZhBp95ItbFafSZbrS5w1pMJHDZO/mjdV8+kDZGZRZoy1gdWfp4UhudHjBKkcNzbMw==}
     hasBin: true
 
   table@6.8.2:
@@ -16066,9 +16066,9 @@ snapshots:
 
   preserve@0.2.0: {}
 
-  press-plus@1.5.20(canvas@2.11.2)(press-ui@2.2.14):
+  press-plus@1.5.20(canvas@2.11.2)(press-ui@2.2.36):
     dependencies:
-      press-ui: 2.2.14
+      press-ui: 2.2.36
       t-comm: 1.3.106(canvas@2.11.2)
     transitivePeerDependencies:
       - canvas
@@ -16076,15 +16076,15 @@ snapshots:
 
   press-ui@1.3.39:
     dependencies:
-      t-comm: 1.3.126
+      t-comm: 1.3.139
     transitivePeerDependencies:
       - debug
 
-  press-ui@2.2.14:
+  press-ui@2.2.36:
     dependencies:
       '@popperjs/core': 2.11.8
       swiper-next: 0.1.1
-      t-comm: 1.3.126
+      t-comm: 1.3.139
     transitivePeerDependencies:
       - debug
 
@@ -17211,7 +17211,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  t-comm@1.3.126:
+  t-comm@1.3.139:
     dependencies:
       '@babel/runtime': 7.26.0
       '@commitlint/config-conventional': 17.8.1
