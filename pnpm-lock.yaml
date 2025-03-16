@@ -58,10 +58,10 @@ importers:
         version: 4.17.21
       press-plus:
         specifier: ^1.3.53
-        version: 1.5.20(canvas@2.11.2)(press-ui@2.2.38)
+        version: 1.5.20(canvas@2.11.2)(press-ui@3.0.0)
       press-ui:
-        specifier: 2.2.38
-        version: 2.2.38
+        specifier: 3.0.0
+        version: 3.0.0
       qrcode.vue:
         specifier: ^3.4.1
         version: 3.6.0(vue@3.5.13(typescript@5.1.6))
@@ -6416,8 +6416,8 @@ packages:
   press-ui@1.3.39:
     resolution: {integrity: sha512-w22hKAPlUZcR/Ub7MliNFMIH75iugm2BKPHZCIRhQ/zsyhSt+1wbilpmXC3YztHhVpX1iddYA8Rrto7ZpPrJEw==}
 
-  press-ui@2.2.38:
-    resolution: {integrity: sha512-6gAHId91ngy687gqiIyxh0UXwAHw24QsG/iv/MgB7O1bS3lZK6EafC+WEs+seXDXHrx4ck5/mmsbCQz05lnAtQ==}
+  press-ui@3.0.0:
+    resolution: {integrity: sha512-zUqmraI6So0DV1tb5pDaZ0cURHFO49wHf1w1uuJk427uIMHA3eJVO5OSnYFvzmhCLugwZWj707jRRM5yXHn2dw==}
     engines: {node: '>=14'}
 
   prettier-linter-helpers@1.0.0:
@@ -7319,8 +7319,8 @@ packages:
     peerDependencies:
       canvas: ^2.6.1
 
-  t-comm@1.3.139:
-    resolution: {integrity: sha512-xHyiAg2EnAznKD76bJo5sZhBp95ItbFafSZbrS5w1pMJHDZO/mjdV8+kDZGZRZoy1gdWfp4UhudHjBKkcNzbMw==}
+  t-comm@1.3.151:
+    resolution: {integrity: sha512-T4kg5hASeukAOfaY3WsD8xlOQdic5Ta17vziUgyjgojxMiCUtBepclr1Wxzjz8hcIraR7vZ+ko6IR6ak6yHMjA==}
     hasBin: true
 
   table@6.8.2:
@@ -16066,9 +16066,9 @@ snapshots:
 
   preserve@0.2.0: {}
 
-  press-plus@1.5.20(canvas@2.11.2)(press-ui@2.2.38):
+  press-plus@1.5.20(canvas@2.11.2)(press-ui@3.0.0):
     dependencies:
-      press-ui: 2.2.38
+      press-ui: 3.0.0
       t-comm: 1.3.106(canvas@2.11.2)
     transitivePeerDependencies:
       - canvas
@@ -16076,17 +16076,11 @@ snapshots:
 
   press-ui@1.3.39:
     dependencies:
-      t-comm: 1.3.139
+      t-comm: 1.3.151
     transitivePeerDependencies:
       - debug
 
-  press-ui@2.2.38:
-    dependencies:
-      '@popperjs/core': 2.11.8
-      swiper-next: 0.1.1
-      t-comm: 1.3.139
-    transitivePeerDependencies:
-      - debug
+  press-ui@3.0.0: {}
 
   prettier-linter-helpers@1.0.0:
     dependencies:
@@ -17211,7 +17205,7 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  t-comm@1.3.139:
+  t-comm@1.3.151:
     dependencies:
       '@babel/runtime': 7.26.0
       '@commitlint/config-conventional': 17.8.1
