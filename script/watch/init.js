@@ -1,9 +1,9 @@
 const path = require('path');
 const { readFileSync, writeFileSync } = require('t-comm');
-const { initWithPressUI } = require('../../src/press-ui/packages/press-ui/script/watch/init');
+const { initWithPressUI } = require('../../src/press-ui/script/watch/init');
 
 const PATH_JSON_PATH = path.resolve(__dirname, '../../src/pages.json');
-const PAGE_JSON_PRESS_UI = path.resolve(__dirname, '../../src/press-ui/packages/press-ui/src/pages.json');
+const PAGE_JSON_PRESS_UI = path.resolve(__dirname, '../../src/press-ui/src/pages.json');
 
 
 const CP_LIST = [

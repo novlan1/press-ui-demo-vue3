@@ -202,7 +202,7 @@ if (this.loading) return;
 
 由于列表数据在父组件控制，`press-list`内部只有`slot`占位，并且不同列表的结构和样式千差万别，所以虚拟列表只能在父组件实现。
 
-`press-list`提供了虚拟列表的[简单示例](https://github.com/novlan1/press-ui/blob/release/packages/press-ui/src/packages/press-list/demo.vue)，可以参考使用。
+`press-list`提供了虚拟列表的[简单示例](https://github.com/novlan1/press-ui/blob/release/src/packages/press-list/demo.vue)，可以参考使用。
 
 
 虚拟列表的实现原理如下：
